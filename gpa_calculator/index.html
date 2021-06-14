@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <!----- CSS ----->
+    <link rel="stylesheet" href="default.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+
+            <!----- TITLE ----->
+            <div class="title">
+                <h1>GPA Calculator</h1>
+            </div>
+
+            <!----- LABELS ----->
+            <div class="labels">
+                <h2>Course</h2>
+                <h2>Grade</h2>
+                <h2>Credits</h2>
+            </div>
+
+            <!-- METHOD 2: Loop through all classes-->
+            <div class="inputs" id="wrapper">
+            </div>
+
+            <!-- METHOD 1: Hardcode Classes
+            <div class="inputs" id="wrapper">
+                <span>
+                    <div class="row-1">
+                        <input type="text" id="course" name="course">
+                        <select id="grade1" name="grade">
+                            <option value="None">-</option>
+                            <option value="Aplus">A+</option>
+                            <option value="Areg">A</option>
+                            <option value="Aminus">A-</option>
+                            <option value="Bplus">B+</option>
+                            <option value="Breg">B</option>
+                            <option value="Bminus">B-</option>
+                            <option value="Cplus">C+</option>
+                            <option value="Creg">C</option>
+                            <option value="Cminus">C-</option>
+                            <option value="Dplus">D+</option>
+                            <option value="Dreg">D</option>
+                            <option value="Dminus">D</option>
+                            <option value="Freg">F</option>
+                        </select>
+                        <input type="number" id="credits1" name="credits">
+                    </div>
+                </span>
+
+                <span>
+                    <div class="row-2">
+                        <input type="text" id="course" name="course">
+                        <select id="grade2" name="grade">
+                            <option value="None">-</option>
+                            <option value="Aplus">A+</option>
+                            <option value="Areg">A</option>
+                            <option value="Aminus">A-</option>
+                            <option value="Bplus">B+</option>
+                            <option value="Breg">B</option>
+                            <option value="Bminus">B-</option>
+                            <option value="Cplus">C+</option>
+                            <option value="Creg">C</option>
+                            <option value="Cminus">C-</option>
+                            <option value="Dplus">D+</option>
+                            <option value="Dreg">D</option>
+                            <option value="Dminus">D</option>
+                            <option value="Freg">F</option>
+                        </select>
+                        <input type="number" id="credits2" name="credits">
+                    </div>
+                </span>
+
+                <span>
+                    <div class="row-3">
+                        <input type="text" id="course" name="course">
+                        <select id="grade3" name="grade">
+                            <option value="None">-</option>
+                            <option value="Aplus">A+</option>
+                            <option value="Areg">A</option>
+                            <option value="Aminus">A-</option>
+                            <option value="Bplus">B+</option>
+                            <option value="Breg">B</option>
+                            <option value="Bminus">B-</option>
+                            <option value="Cplus">C+</option>
+                            <option value="Creg">C</option>
+                            <option value="Cminus">C-</option>
+                            <option value="Dplus">D+</option>
+                            <option value="Dreg">D</option>
+                            <option value="Dminus">D</option>
+                            <option value="Freg">F</option>
+                        </select>
+                        <input type="number" id="credits3" name="credits">
+                    </div>
+                </span>
+
+                <span>
+                    <div class="row-4">
+                        <input type="text" id="course" name="course">
+                        <select id="grade4" name="grade">
+                            <option value="None">-</option>
+                            <option value="Aplus">A+</option>
+                            <option value="Areg">A</option>
+                            <option value="Aminus">A-</option>
+                            <option value="Bplus">B+</option>
+                            <option value="Breg">B</option>
+                            <option value="Bminus">B-</option>
+                            <option value="Cplus">C+</option>
+                            <option value="Creg">C</option>
+                            <option value="Cminus">C-</option>
+                            <option value="Dplus">D+</option>
+                            <option value="Dreg">D</option>
+                            <option value="Dminus">D</option>
+                            <option value="Freg">F</option>
+                        </select>
+                        <input type="number" id="credits4" name="credits">
+                    </div>
+                </span>
+
+            </div>
+        -->
+            <!-- BUTTONS -->
+            <div class="all-buttons">
+                <!-- ADD NEW ROW-->
+                <button onClick="addNewRow()" class="buttons"><b>ADD COURSE</b></button>
+
+                <!-- CALC GPA BUTTON-->
+                <button onClick="calculateGPA()" class="buttons"><b>CALCULATE GPA</b></button>
+
+                <!-- CLEAR BUTTON-->
+                <button onClick="clearAll()" class="buttons"><b>CLEAR ALL</b></button>
+            </div>
+
+            <!-- DISPLAYS-->
+            <div class='displays'>
+                <!-- DISPLAY GPA-->
+                <div class='display-gpa'>
+                    <p id="gpa"></p>
+                </div>
+
+                <!-- DISPLAY GPA LETTER -->
+                <div class='display-gpa'>
+                    <p id="letter-grade"></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!----- JAVASCRIPT ----->
+    <script src="./main.js"></script>
+</body>
+
+</html>
