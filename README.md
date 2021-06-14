@@ -28,5 +28,5 @@ Demo: https://kpham841.github.io/grade_calculator/
 A web tool that generates a random string based on a certain criteria.
 
 Repo: https://github.com/kpham841/random_string_generator<br/>
-Demo: https://kpham841.github.io/random_password_generator/
+Demo: https://kpham841.github.io/random_string_generator/
 
