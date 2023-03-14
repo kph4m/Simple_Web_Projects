@@ -1,6 +1,13 @@
-# Web_Tools
+# Simple Web Projects
 
-A collection of useful web tools I created.
+A collection of small web projects I created to learn the basic of web development.
+
+## Whack-A-Mole
+
+Simple whack-a-mole game using the MVC pattern.
+
+[Repo](https://github.com/kpham841/whackamole-mvc)<br/>
+[Demo](https://kpham841.github.io/whackamole-mvc/)
 
 ## Calculator
 
